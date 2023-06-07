@@ -1,0 +1,109 @@
+.section {
+  border-bottom: 2px solid #000;
+  padding-top: 6.5rem;
+  padding-bottom: 7rem;
+  position: relative;
+
+  .text {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+
+    font-size: 2.25rem;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    font-weight: 500;
+  }
+
+  .roadmapLoop {
+    max-width: 75rem;
+    background-color: #ffc900;
+    border: 2px solid #000;
+    border-radius: 30rem;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    position: relative;
+
+    .roadmapLoopInner {
+      min-height: 16rem;
+      background-color: #ffc900;
+      border: 2px solid #000;
+      border-radius: 30rem;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      display: flex;
+      position: relative;
+
+      .roadmapLoopInnerTop {
+        justify-content: space-between;
+        padding-left: 16%;
+        padding-right: 16%;
+        position: absolute;
+        top: -15px;
+        bottom: auto;
+        left: 0%;
+        right: 0%;
+        display: flex;
+
+        .roadmapLoopInnerTopItem {
+          padding: 0 2rem;
+          position: relative;
+          display: flex;
+          background-color: #ffc900;
+          font-size: 1.5rem;
+          font-weight: 500;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: -5.5px;
+            width: 11px;
+            height: 19px;
+            background-image: url("/loop_right.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+
+      .roadmapLoopInnerBottom {
+        justify-content: space-between;
+        padding-left: 16%;
+        padding-right: 16%;
+        position: absolute;
+        bottom: -15px;
+        left: 0%;
+        right: 0%;
+        display: flex;
+
+        .roadmapLoopInnerBottomItem {
+          padding: 0 2rem;
+          position: relative;
+          display: flex;
+          background-color: #ffc900;
+          font-size: 1.5rem;
+          font-weight: 500;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 9.5px;
+            right: -5.5px;
+            width: 11px;
+            height: 19px;
+            background-image: url("/loop_left.svg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

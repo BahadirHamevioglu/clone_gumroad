@@ -1,0 +1,101 @@
+.section {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  border-bottom: 2px solid #000;
+
+  .cartoonCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    min-height: 22rem;
+    align-items: center;
+
+    .cartoonCard {
+      display: flex;
+      flex: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 6.5vw;
+      &.black {
+        background-color: #000;
+        color: #fff;
+      }
+      &.borderRight {
+        border-right: 2px solid #000;
+      }
+      &.yellowDark {
+        background-color: #ffc900;
+      }
+
+      .cartoonCardImage {
+        position: relative;
+
+        .cartoonCardText {
+          color: #000;
+          background-color: #fff;
+          border: 2px solid #000;
+          border-radius: 1.5rem;
+          padding: 2rem;
+          font-weight: 500;
+          position: absolute;
+          top: -3rem;
+          bottom: auto;
+          left: -3rem;
+          right: auto;
+        }
+      }
+
+      .cartoonSticker {
+        position: absolute;
+        bottom: -5rem;
+        right: 1.6rem;
+        animation: shakeAnimation 2.5s infinite linear;
+        animation-play-state: paused;
+        cursor: pointer;
+        &:hover {
+          animation-play-state: running;
+        }
+        @keyframes shakeAnimation {
+          0% {
+            transform: translate(1px, 1px) rotate(0deg);
+          }
+          10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+          }
+          20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+          }
+          30% {
+            transform: translate(3px, 2px) rotate(0deg);
+          }
+          40% {
+            transform: translate(1px, -1px) rotate(1deg);
+          }
+          50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+          }
+          60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+          }
+          70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+          }
+          80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+          }
+          90% {
+            transform: translate(1px, 2px) rotate(0deg);
+          }
+          100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+          }
+        }
+      }
+    }
+  }
+}
