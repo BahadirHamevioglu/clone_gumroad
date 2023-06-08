@@ -1,97 +1,31 @@
-.section {
+.gridItemList {
+  margin-top: 48px;
   width: 100%;
-  max-width: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.5rem;
+  .gridItemListItem {
+    font-size: 20px;
+    line-height: 1.3;
+    position: relative;
+    padding: 0 3rem;
 
-  .sellAnythingGrid {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    border-bottom: 2px solid #000;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    display: grid;
-
-    .sellAnythingGridItem {
-      position: relative;
-      width: 100%;
-      min-height: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 28px;
       height: 100%;
+      background-image: url("/arrow_right.svg");
+      background-repeat: no-repeat;
+      background-size: 1.25rem;
+      background-position: 0 60%;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      text-align: left;
-
-      &.teal {
-        background-color: #23a094;
-      }
-
-      &.borderRight {
-        border-right: 2px solid #000;
-      }
-
-      .sellAnythingGridItemImage {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-
-      .gridItemTitle {
-        font-size: 3rem;
-        line-height: 1.1;
-        width: 100%;
-        text-align: left;
-        margin-bottom: 48px;
-      }
-
-      .gridItemDescription {
-        letter-spacing: -0.01em;
-        font-size: 1.5rem;
-        line-height: 1.3;
-      }
-
-      .gridItemList {
-        margin-top: 48px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: left;
-        gap: 0.5rem;
-        .gridItemListItem {
-          font-size: 20px;
-          line-height: 1.3;
-          position: relative;
-          padding: 0 3rem;
-
-          &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 28px;
-            height: 100%;
-            background-image: url("/arrow_right.svg");
-            background-repeat: no-repeat;
-            background-size: 1.25rem;
-            background-position: 0 60%;
-            display: flex;
-            align-items: center;
-            justify-self: center;
-          }
-        }
-      }
-    }
-
-    .sellAnythingGridRight {
-      height: 100%;
-      min-height: 22rem;
       align-items: center;
-      padding: 6.5vw;
-      display: flex;
-      position: relative;
-      width: 100%;
+      justify-self: center;
     }
   }
 }

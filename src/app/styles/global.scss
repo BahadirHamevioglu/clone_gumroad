@@ -4,3 +4,44 @@ body {
   line-height: 1.4;
   letter-spacing: -0.03em;
 }
+
+.backgroundPink {
+  background: var(--color-pink);
+  color: var(--color-black);
+}
+
+.backgroundViolet {
+  background: var(--color-violet);
+  color: var(--color-black);
+}
+
+.backgroundDarkYellow {
+  background: var(--color-dark-yellow);
+  color: var(--color-black);
+}
+
+.backgroundTeal {
+  background: var(--color-teal);
+  color: var(--color-black);
+}
+
+.backgroundWhite {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.borderRight {
+  border-right: 2px solid var(--color-black);
+}
+
+.borderLeft {
+  border-left: 2px solid var(--color-black);
+}
+
+.borderTop {
+  border-top: 2px solid var(--color-black);
+}
+
+.borderBottom {
+  border-bottom: 2px solid var(--color-black);
+}
