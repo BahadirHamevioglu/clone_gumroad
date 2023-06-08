@@ -1,7 +1,5 @@
 // *** COMPONENTS
 // ** SECTION COMPONENTS
-import HugeLogo from "@/components/huge-logo";
-import Header from "@/components/header";
 import Herosection from "@/containers/home/components/herosection";
 import RoadMap from "@/containers/home/components/roadmap";
 import SafetyCards from "./components/safety-cards";
@@ -11,13 +9,14 @@ import SellAnything from "./components/sell-anything";
 import ClientComment from "./components/client-comment";
 import SellToAnyone from "./components/sell-to-anyone";
 import SellAnywhere from "./components/sell-anywhere";
+import Inspirations from "./components/inspirations";
+import EarnedMoney from "./components/earned-money";
+import StartSelling from "./components/start-selling";
 // ** UI COMPONENTS
 
 function HomePageContainer() {
   return (
     <main>
-      <HugeLogo />
-      <Header />
       <Herosection />
       <RoadMap />
       <SafetyCards />
@@ -48,49 +47,20 @@ function HomePageContainer() {
         clientName="trendsvc"
       />
       <SellAnywhere />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Inspirations />
+      <ClientComment
+        backgroundColor="#ff90e8"
+        clientImage="/client_ma.png"
+        imageHeight={656}
+        imageWidth={560}
+        clientImageSticker="/stickers/client_comment_sticker_3.svg"
+        clientComment="For years, I had a goal to develop ‘passive’ income streams, but struggled to make that a reality. Last year, I started selling informational products on Gumroad and since then have made $10k+ per month building products that I love."
+        clientRole="Steph Smith sells content tutorials"
+        clientLink="/"
+        clientName="stephsmithio"
+      />
+      <EarnedMoney />
+      <StartSelling />
     </main>
   );
 }

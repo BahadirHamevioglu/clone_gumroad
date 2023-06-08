@@ -1,7 +1,5 @@
 // *** LIBS
 // ** FONTS
-// * SPACE GROTESK
-import { spaceGrotesk } from "../libs/fonts";
 // * CHIVO
 import { chivo } from "../libs/fonts";
 
@@ -14,6 +12,14 @@ import "@/app/styles/global.scss";
 // * VARIABLES SCSS
 import "@/app/styles/variables.scss";
 
+// *** COMPONENTS
+// ** HUGE LOGO
+import HugeLogo from "@/components/huge-logo";
+// ** HEADER
+import Header from "@/components/header";
+// ** FOOTER
+import Footer from "@/components/footer";
+
 // *** METADATA
 // * METADATA
 export const metadata = {
@@ -24,7 +30,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={chivo.className}>{children}</body>
+      <body className={chivo.className}>
+        <HugeLogo />
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

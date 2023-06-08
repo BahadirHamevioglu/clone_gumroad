@@ -1,0 +1,132 @@
+.section {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #000;
+  padding-top: 6.5rem;
+  padding-bottom: 7rem;
+  .inspirationsTop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68rem;
+    margin: 0 auto;
+    .inspirationsTopTitle {
+      font-size: 3rem;
+      line-height: 1.1;
+    }
+
+    .inspirationsTopSubTitle {
+      font-size: 1.5rem;
+      line-height: 1.1;
+      margin-top: 1rem;
+    }
+  }
+
+  .inspirationsBottom {
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    align-content: stretch;
+    justify-content: stretch;
+    display: grid;
+    padding-top: 5rem;
+
+    .inspirationsCategoryItem {
+      width: 100%;
+      min-height: 321px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background: #23a094;
+      padding: 2rem;
+      position: relative;
+      border: 1px solid #000;
+      border-radius: 0.5rem;
+      gap: 0.25rem;
+
+      .inspirationsCategoryItemTop {
+        position: relative;
+        .inspirationsCategoryItemTopTitle {
+          color: #000;
+          font-size: 2rem;
+        }
+      }
+
+      .inspirationsCategoryItemBottom {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top: 1rem;
+        z-index: 2;
+        .inspirationsCategoryItemBottomTitle {
+          font-size: 0.875rem;
+          line-height: 1.4;
+          font-weight: 500;
+          z-index: 3;
+        }
+
+        .inspirationsCategoryItemTags {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          position: relative;
+          z-index: 4;
+        }
+      }
+    }
+  }
+}
+
+.inspirationsCategoryItemTagWrapper {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .inspirationsCategoryItemTag {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 99999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    text-transform: lowercase;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    background: #000;
+    z-index: 0;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  &:hover {
+    .inspirationsCategoryItemTag {
+      transform: translateY(-3px) translateX(-3px);
+    }
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
