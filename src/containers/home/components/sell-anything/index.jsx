@@ -12,12 +12,7 @@ function SellAnything() {
           className={`${styles.sellAnythingGridItem} ${styles.teal} ${styles.borderRight}`}
         >
           <div className={styles.sellAnythingGridItemImage}>
-            <Image
-              alt="section image"
-              src="/sell_anything_1.svg"
-              width={643}
-              height={703}
-            ></Image>
+            <Image alt="section image" src="/sell_anything_1.svg" fill></Image>
           </div>
         </div>
         <div

@@ -38,7 +38,7 @@ function Cartoon() {
           <div className={styles.cartoonSticker}>
             <Image
               alt="cartoon sticker"
-              src="/cartoon_sticker.svg"
+              src="/stickers/cartoon_sticker.svg"
               width={288}
               height={220}
             ></Image>

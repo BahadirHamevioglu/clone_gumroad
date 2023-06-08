@@ -59,7 +59,7 @@ function HerosectionRight() {
           />
         </div>
         <Image
-          src="/herosection_image_1.svg"
+          src="/stickers/herosection_image_1.svg"
           width={216}
           height={177}
           alt="svg"
@@ -72,7 +72,7 @@ function HerosectionRight() {
           id="herosection_right_sticker_coins"
         />
         <Image
-          src="/herosection_image_2.svg"
+          src="/stickers/herosection_image_2.svg"
           width={128}
           height={184}
           alt="svg"
