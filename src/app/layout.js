@@ -2,6 +2,8 @@
 // ** FONTS
 // * SPACE GROTESK
 import { spaceGrotesk } from "../libs/fonts";
+// * CHIVO
+import { chivo } from "../libs/fonts";
 
 // *** STYLES
 // ** SCSS
@@ -22,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={spaceGrotesk.className}>{children}</body>
+      <body className={chivo.className}>{children}</body>
     </html>
   );
 }
