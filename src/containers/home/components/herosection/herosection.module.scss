@@ -190,5 +190,9 @@
         }
       }
     }
+    @media screen and (max-width: 1023px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 }

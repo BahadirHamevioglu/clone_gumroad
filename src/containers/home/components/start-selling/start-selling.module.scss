@@ -18,6 +18,10 @@
     max-width: 68rem;
     margin: 0 auto;
     padding-bottom: 4rem;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 3rem;
+    }
   }
 
   .startSellingCta {

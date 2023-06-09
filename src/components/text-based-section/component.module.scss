@@ -95,5 +95,10 @@
       position: relative;
       width: 100%;
     }
+
+    @media screen and (max-width: 1439px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 }
